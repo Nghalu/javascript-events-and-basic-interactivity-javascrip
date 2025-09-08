@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Interactivity Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>JavaScript Interactive Elements</h1>
+
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>Light/Dark Mode Toggle</h2>
+    <button id="toggleModeBtn">Switch to Dark Mode</button>
+  </section>
+
+  <section>
+    <h2>Counter Game</h2>
+    <p>Clicks: <span id="counter">0</span></p>
+    <button id="incrementBtn">Click Me!</button>
+  </section>
+
+  <section>
+    <h2>FAQ (Collapsible)</h2>
+    <div class="faq">
+      <button class="faq-question">What is this project?</button>
+      <p class="faq-answer">It’s a JavaScript practice assignment to learn events and validation.</p>
+    </div>
+  </section>
+
+  <!-- NEW: Dropdown Menu -->
+  <section>
+    <h2>Dropdown Menu</h2>
+    <div class="dropdown">
+      <button id="dropdownBtn">Menu ▼</button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+      <label>
+        Name: <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+      </label><br><br>
+
+      <label>
+        Email: <input type="text" id="email">
+        <span class="error" id="emailError"></span>
+      </label><br><br>
+
+      <label>
+        Password: <input type="password" id="password">
+        <span class="error" id="passwordError"></span>
+      </label><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="formSuccess"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
